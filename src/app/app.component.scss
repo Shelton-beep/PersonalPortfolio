@@ -63,6 +63,18 @@ a {
   animation: text_reveal_name 0.5s ease forwards;
   animation-delay: 3s;
 }
+#hero h1:nth-child(4) {
+  animation: text_reveal_name1 0.5s ease forwards;
+  animation-delay: 4s;
+}
+#hero h1:nth-child(5) {
+  animation: text_reveal_name1 0.5s ease forwards;
+  animation-delay: 4s;
+}
+#hero h1:nth-child(6) {
+  animation: text_reveal_name1 0.5s ease forwards;
+  animation-delay: 4s;
+}
 #hero h1 span {
   position: absolute;
   top: 0;
@@ -82,12 +94,25 @@ a {
 #hero h1:nth-child(3) span {
   animation-delay: 2.5s;
 }
+#hero h1:nth-child(4) span {
+  animation-delay: 3.5s;
+  background-color: gray;
+}
+#hero h1:nth-child(5) span {
+  animation-delay: 3.5s;
+  background-color: gray;
+}
+#hero h1:nth-child(6) span {
+  animation-delay: 3.5s;
+  background-color: gray;
+}
 #hero .cta {
   display: inline-block;
   padding: 10px 30px;
   color: white;
   background-color: transparent;
   border: 2px solid crimson;
+  border-radius: 25px;
   font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
@@ -121,6 +146,11 @@ a {
   100% {
     color: crimson;
     font-weight: 500;
+  }
+}
+@keyframes text_reveal_name1 {
+  100% {
+    color: gray;
   }
 }
 /*KeyFrames*/
