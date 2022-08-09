@@ -1,86 +1,160 @@
-<!--Hero Section-->
-<section id="hero">
-  <div class="hero container">
-    <div>
-      <h1>Hello,<span></span></h1>
-      <h1>my name is <span></span></h1>
-      <h1>Shelton Nyasha Simbi <span></span></h1>
-      <h1>I'm a Front End <span></span></h1>
-      <h1>Software <span></span></h1>
-      <h1>Developer. <span></span></h1>
-      <a href="#" type="button" class="cta">Get in Touch</a>
-    </div>
-  </div>
-</section>
-<!--Hero Section-->
-<mat-grid-list cols="4" rowHeight="200px">
-  <mat-grid-tile
-    *ngFor="let tile of tiles"
-    [colspan]="tile.cols"
-    [rowspan]="tile.rows"
-    [style.background]="tile.color"
-  >
-    {{ tile.text }}
-  </mat-grid-tile>
-</mat-grid-list>
-<!--Projects Section-->
-<section id="projects">
-  <div class="projects container">
-    <div class="projects-header">
-      <h1 class="section-title">Recent <span>Projects</span></h1>
-    </div>
-    <div class="all-projects">
-      <div class="project-item">
-        <div class="project-info">
-          <h1>Project 1</h1>
-          <h2>Coding is Love</h2>
-          <p>hsgjfsgjdfgdgjhgfjfsdjfhdsvghvjvh</p>
+<html>
+  <!--Header-->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero"
+            ><h1><span>SNS</span></h1>
+          </a>
         </div>
-        <div class="project-img">
-          <img src="../assets/2517915.jpg" alt="img" />
-        </div>
-      </div>
-      <div class="project-item">
-        <div class="project-info">
-          <h1>Project 2</h1>
-          <h2>Coding is Love</h2>
-          <p>hsgjfsgjdfgdgjhgfjfsdjfhdsvghvjvh</p>
-        </div>
-        <div class="project-img">
-          <img src="../assets/2517915.jpg" alt="img" />
-        </div>
-      </div>
-      <div class="project-item">
-        <div class="project-info">
-          <h1>Project 3</h1>
-          <h2>Coding is Love</h2>
-          <p>hsgjfsgjdfgdgjhgfjfsdjfhdsvghvjvh</p>
-        </div>
-        <div class="project-img">
-          <img src="../assets/2517915.jpg" alt="img" />
-        </div>
-      </div>
-      <div class="project-item">
-        <div class="project-info">
-          <h1>Project 4</h1>
-          <h2>Coding is Love</h2>
-          <p>hsgjfsgjdfgdgjhgfjfsdjfhdsvghvjvh</p>
-        </div>
-        <div class="project-img">
-          <img src="../assets/2517915.jpg" alt="img" />
-        </div>
-      </div>
-      <div class="project-item">
-        <div class="project-info">
-          <h1>Project 5</h1>
-          <h2>Coding is Love</h2>
-          <p>hsgjfsgjdfgdgjhgfjfsdjfhdsvghvjvh</p>
-        </div>
-        <div class="project-img">
-          <img src="../assets/2517915.jpg" alt="img" />
+        <div class="nav-list">
+          <div class="hamburger"><div class="bar"></div></div>
+          <ul>
+            <li><a href="#hero" data-after="Home">Home</a></li>
+            <li><a href="#projects" data-after="Projects">Projects</a></li>
+            <li>
+              <a href="#" data-after="Work">Work and Experience</a>
+            </li>
+            <li><a href="#about" data-after="About">About</a></li>
+            <li><a href="#contact" data-after="Contact">Contact</a></li>
+          </ul>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<!--Projects Section-->
+  </section>
+  <!--End of Header-->
+
+  <!--Hero Section-->
+  <section id="hero">
+    <div class="hero container">
+      <div>
+        <h1>Hello,<span></span></h1>
+        <h1>my name is <span></span></h1>
+        <h1>Shelton Nyasha Simbi <span></span></h1>
+        <a href="#" type="button" class="cta">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+  <!--End of Hero Section-->
+
+  <!--Projects Section-->
+  <section id="projects">
+    <div class="projects container">
+      <div class="projects-header">
+        <h1 class="section-title">Recent <span>Projects</span></h1>
+      </div>
+      <div class="all-projects">
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Project 1</h1>
+            <h2>Coding is Love</h2>
+            <p>hsgjfsgjdfgdgjhgfjfsdjfhdsvghvjvh</p>
+          </div>
+          <div class="project-img">
+            <img src="../assets/2517915.jpg" alt="img" />
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Project 2</h1>
+            <h2>Coding is Love</h2>
+            <p>hsgjfsgjdfgdgjhgfjfsdjfhdsvghvjvh</p>
+          </div>
+          <div class="project-img">
+            <img src="../assets/2517915.jpg" alt="img" />
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Project 3</h1>
+            <h2>Coding is Love</h2>
+            <p>hsgjfsgjdfgdgjhgfjfsdjfhdsvghvjvh</p>
+          </div>
+          <div class="project-img">
+            <img src="../assets/2517915.jpg" alt="img" />
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Project 4</h1>
+            <h2>Coding is Love</h2>
+            <p>hsgjfsgjdfgdgjhgfjfsdjfhdsvghvjvh</p>
+          </div>
+          <div class="project-img">
+            <img src="../assets/2517915.jpg" alt="img" />
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Project 5</h1>
+            <h2>Coding is Love</h2>
+            <p>hsgjfsgjdfgdgjhgfjfsdjfhdsvghvjvh</p>
+          </div>
+          <div class="project-img">
+            <img src="../assets/2517915.jpg" alt="img" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--End of Projects Section-->
+
+  <hr />
+  <marquee behavior="" direction="">About Me</marquee>
+  <hr />
+  <!--About Me Section-->
+  <section id="about" style="margin-top: 0; padding-top: 0">
+    <div class="about container">
+      <div class="col-left">
+        <div class="about-img">
+          <img
+            src="../assets/rear-view-programmer-working-all-night-long.jpg"
+            alt="aboutMeImage"
+          />
+        </div>
+      </div>
+      <div class="col-right">
+        <h1 class="section-title">About <span>me</span></h1>
+        <h2>Front End Developer</h2>
+        <p>hjsgvfhdgvfhsvfhsg</p>
+        <a class="cta" href="#">Download Resume</a>
+      </div>
+    </div>
+  </section>
+  <!--End of About Me Section-->
+
+  <!--Contact Section-->
+  <section id="contact">
+    <div class="contact container">
+      <div>
+        <h1 class="section-title">Contact <span>info</span></h1>
+      </div>
+      <div></div>
+    </div>
+  </section>
+  <!--End of Contact Section-->
+
+  <!--Footer-->
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand">
+        <h1><span>S</span>helton <span>S</span>imbi</h1>
+        <h2>Hard work pays</h2>
+      </div>
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="#">github</a>
+        </div>
+        <div class="social-item">
+          <a href="#">Twitter</a>
+        </div>
+        <div class="social-item">
+          <a href="#">LinkedIn</a>
+        </div>
+        <p>Copyrights @ 2022 Shelton. All rights reserved</p>
+      </div>
+    </div>
+  </section>
+  <!--End of Footer-->
+</html>
