@@ -8,12 +8,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'PersonalPortfolio';
 
-  hamburger = document.querySelector('.header .nav-bar .nav-list .hamburger')
-  mobile_menu = document.querySelector('.header .nav-bar .nav-list ul')
-  header = document.querySelector('.header.container')
-
-  //hamburger.addEventListener('click',() => {
-  //hamburger.classList.toggle('active')
-  //})
 
 }
