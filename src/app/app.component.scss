@@ -406,6 +406,64 @@ p {
 }
 /* End of Projects Section */
 
+/* Experience and Skills Section */
+#skills .skills-header h1 {
+  margin-bottom: 50px;
+  font-size: 3rem;
+}
+#skills .skills {
+  flex-direction: column;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 20px;
+}
+#skills .all-experiences {
+  display: column;
+  justify-content: space-around;
+}
+#skills .experience-item {
+  align-items: left;
+  display: flex;
+  margin-top: 10px;
+}
+#skills .experience-date {
+  text-align: left;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 1px solid transparent;
+  background-color: lightcoral;
+  width: 120px;
+  border-radius: 25px;
+}
+#skills .experience-info {
+  background-color: transparent;
+}
+#skills .icon-display {
+  padding-right: 15px;
+  padding-left: 30px;
+  align-items: center;
+  justify-content: center;
+}
+#skills .icon {
+  background-color: lightcoral;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+#skills mat-icon {
+  color: white;
+  margin-top: 15px;
+  font-size: 20px;
+}
+#skills .vl {
+  border-left: 2px solid lightcoral;
+  height: 100px;
+  margin-top: 0;
+  margin-left: 25px;
+}
+/* End of Experience and Skills Section */
+
 /* About Me Section */
 #about .about {
   flex-direction: column-reverse;
@@ -439,8 +497,9 @@ p {
   font-size: 2rem;
 }
 #about .col-left .about-img {
-  width: 100%;
+  width: fit-content;
   height: 100%;
+  background-color: black;
   position: relative;
   border: 10px solid white;
 }
@@ -563,6 +622,7 @@ p {
 
 /* Media Query for Desktop */
 @media only screen and (min-width: 1200px) {
+  /* header */
   #header .hamburger {
     display: none;
   }
@@ -582,5 +642,20 @@ p {
   #header .nav-list ul a::after {
     display: none;
   }
+  /* End of header */
+
+  /* Experience and Skills */
+  #skills .all-experiences {
+    display: flex;
+    justify-content: space-around;
+  }
+  #skills .skills-header h1 {
+    margin-bottom: 50px;
+    font-size: 4rem;
+  }
+  #skills .experience-date {
+    text-align: center;
+  }
+  /* End of Experience and Skills */
 }
 /* End of Media Query for Desktop */

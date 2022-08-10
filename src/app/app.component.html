@@ -14,7 +14,7 @@
             <li><a href="#hero" data-after="Home">Home</a></li>
             <li><a href="#projects" data-after="Projects">Projects</a></li>
             <li>
-              <a href="#" data-after="Work">Work and Experience</a>
+              <a href="#skills" data-after="Skills">Experience and Skills</a>
             </li>
             <li><a href="#about" data-after="About">About</a></li>
             <li><a href="#contact" data-after="Contact">Contact</a></li>
@@ -100,6 +100,93 @@
   </section>
   <!--End of Projects Section-->
 
+  <!--Experience and Skills Section-->
+  <section id="skills">
+    <div class="skills container">
+      <div class="skills-header">
+        <h1 class="section-title">
+          Exper<span>ience</span> a<span>n</span>d <span>Ski</span>lls
+        </h1>
+      </div>
+      <div class="all-experiences">
+        <div class="experience-item">
+          <div class="icon-display">
+            <div class="icon">
+              <mat-icon>credit_card</mat-icon>
+            </div>
+            <div class="vl"></div>
+          </div>
+          <div class="experience-info">
+            <h5 class="experience-date">March to present</h5>
+            <h2 class="experience-title">
+              <b>Software Developer-</b>Judicial Service Commission
+            </h2>
+            <p class="experience-duties">jghsgfdjsgdgfjgjfjdfjh</p>
+          </div>
+        </div>
+        <div class="experience-item">
+          <div class="icon-display">
+            <div class="icon">
+              <mat-icon>credit_card</mat-icon>
+            </div>
+            <div class="vl"></div>
+          </div>
+          <div class="experience-info">
+            <h5 class="experience-date">March to present</h5>
+            <h2 class="experience-title">
+              <b>Software Developer-</b>Judicial Service Commission
+            </h2>
+            <p class="experience-duties">jghsgfdjsgdgfjgjfjdfjh</p>
+          </div>
+        </div>
+        <div class="experience-item">
+          <div class="icon-display">
+            <div class="icon">
+              <mat-icon>credit_card</mat-icon>
+            </div>
+            <div class="vl"></div>
+          </div>
+          <div class="experience-info">
+            <h5 class="experience-date" style="width: 200px">
+              August 2017 - JUNE 2021
+            </h5>
+            <h2 class="experience-title">
+              <b>Bachelor's degree: Business Studies and Computing Science -</b>
+              <p>UNIVERSITY OF ZIMBABWE</p>
+            </h2>
+          </div>
+        </div>
+      </div>
+      <div class="technologies">
+        <h1>Here are the technologies I've been working with recently</h1>
+        <mat-accordion>
+          <mat-expansion-panel hideToggle>
+            <mat-expansion-panel-header>
+              <mat-panel-title> This is the expansion title </mat-panel-title>
+              <mat-panel-description>
+                This is a summary of the content
+              </mat-panel-description>
+            </mat-expansion-panel-header>
+            <p>This is the primary content of the panel.</p>
+          </mat-expansion-panel>
+          <mat-expansion-panel
+            (opened)="panelOpenState = true"
+            (closed)="panelOpenState = false"
+          >
+            <mat-expansion-panel-header>
+              <mat-panel-title> Self aware panel </mat-panel-title>
+              <mat-panel-description>
+                Currently I am {{ panelOpenState ? "open" : "closed" }}
+              </mat-panel-description>
+            </mat-expansion-panel-header>
+            <p>I'm visible because I am open</p>
+          </mat-expansion-panel>
+        </mat-accordion>
+      </div>
+    </div>
+  </section>
+  <!--End of Experience and Skills Section-->
+
   <hr />
   <marquee behavior="" direction="">About Me</marquee>
   <hr />
@@ -108,16 +195,21 @@
     <div class="about container">
       <div class="col-left">
         <div class="about-img">
-          <img
-            src="../assets/rear-view-programmer-working-all-night-long.jpg"
-            alt="aboutMeImage"
-          />
+          <img src="../assets/DSC_0934.jpg" alt="aboutMeImage" />
         </div>
       </div>
       <div class="col-right">
         <h1 class="section-title">About <span>me</span></h1>
         <h2>Front End Developer</h2>
-        <p>hjsgvfhdgvfhsvfhsg</p>
+        <p>
+          Meticulous web developer with over a year of proven front end
+          experience at the Judicial Service Commission of Zimbabwe. Passionate
+          about responsive website design and a firm believer in the
+          mobile-first approach. Capable of continuous learning from senior
+          developers and facilitating projects from concept to launch. Eager to
+          tackle more complex problems, working in a team and continuing to find
+          ways to maximize user efficiency.
+        </p>
         <a class="cta" href="#">Download Resume</a>
       </div>
     </div>
