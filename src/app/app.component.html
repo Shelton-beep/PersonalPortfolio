@@ -1,7 +1,7 @@
 <html>
   <!--Header-->
   <section id="header">
-    <div class="header container">
+    <div class="header container" [class.header-change]="header_variable">
       <div class="nav-bar">
         <div class="brand">
           <a href="#hero"
@@ -11,13 +11,21 @@
         <div class="nav-list">
           <div class="hamburger"><div class="bar"></div></div>
           <ul>
-            <li><a href="#hero" data-after="Home">Home</a></li>
-            <li><a href="#projects" data-after="Projects">Projects</a></li>
+            <li>
+              <a href="#hero" data-after="Home">Home</a>
+            </li>
+            <li>
+              <a href="#projects" data-after="Projects">Projects</a>
+            </li>
             <li>
               <a href="#skills" data-after="Skills">Experience and Skills</a>
             </li>
-            <li><a href="#about" data-after="About">About</a></li>
-            <li><a href="#contact" data-after="Contact">Contact</a></li>
+            <li>
+              <a href="#about" data-after="About">About</a>
+            </li>
+            <li>
+              <a href="#contact" data-after="Contact">Contact</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -32,7 +40,7 @@
         <h1>Hello,<span></span></h1>
         <h1>my name is <span></span></h1>
         <h1>Shelton Nyasha Simbi <span></span></h1>
-        <a href="#" type="button" class="cta">Get in Touch</a>
+        <a href="#contact" type="button" class="cta">Get in Touch</a>
       </div>
     </div>
   </section>
@@ -112,37 +120,56 @@
         <div class="experience-item">
           <div class="icon-display">
             <div class="icon">
-              <mat-icon>credit_card</mat-icon>
+              <mat-icon>work</mat-icon>
             </div>
             <div class="vl"></div>
           </div>
           <div class="experience-info">
             <h5 class="experience-date">March to present</h5>
             <h2 class="experience-title">
-              <b>Software Developer-</b>Judicial Service Commission
+              <b>Front End Software Developer-</b>Judicial Service Commission
             </h2>
-            <p class="experience-duties">jghsgfdjsgdgfjgjfjdfjh</p>
+            <p class="experience-duties">Main responsibilities:</p>
+            <ul>
+              <li>Responsive Web Design</li>
+              <li>
+                Producing, maintaining and modifying websites and user
+                interfaces
+              </li>
+              <li>
+                Routinely testing websites for ease of use, speed and other
+                quality factors
+              </li>
+              <li>Fixing any website issues or bugs that arise</li>
+            </ul>
           </div>
         </div>
         <div class="experience-item">
           <div class="icon-display">
             <div class="icon">
-              <mat-icon>credit_card</mat-icon>
+              <mat-icon>work_outline</mat-icon>
             </div>
             <div class="vl"></div>
           </div>
           <div class="experience-info">
-            <h5 class="experience-date">March to present</h5>
+            <h5 class="experience-date">August 2019 to December 2020</h5>
             <h2 class="experience-title">
-              <b>Software Developer-</b>Judicial Service Commission
+              <b>IT Support and Software Developer Intern-</b>Judicial Service
+              Commission
             </h2>
-            <p class="experience-duties">jghsgfdjsgdgfjgjfjdfjh</p>
+            <p class="experience-duties">Main responsibilities:</p>
+            <ul>
+              <li>Maintaining and improving company website</li>
+              <li>designing, development and deployment of company systems</li>
+              <li>designing and developing RESTful APIs</li>
+            </ul>
           </div>
         </div>
+
         <div class="experience-item">
           <div class="icon-display">
             <div class="icon">
-              <mat-icon>credit_card</mat-icon>
+              <mat-icon>school</mat-icon>
             </div>
             <div class="vl"></div>
           </div>
@@ -158,16 +185,17 @@
         </div>
       </div>
       <div class="technologies">
-        <h1>Here are the technologies I've been working with recently</h1>
+        <h1>
+          <u>Here are the technologies I've been working with recently:</u>
+        </h1>
         <div class="all-tech">
           <div class="tech-item">
             <mat-accordion>
               <mat-expansion-panel hideToggle>
                 <mat-expansion-panel-header>
-                  <mat-panel-title> Languages </mat-panel-title>
-                  <mat-panel-description>
-                    This is a list of the languages i'm familiar with
-                  </mat-panel-description>
+                  <mat-panel-title class="tech-title" [style]="'color:green'">
+                    Languages
+                  </mat-panel-title>
                 </mat-expansion-panel-header>
               </mat-expansion-panel>
               <mat-expansion-panel
@@ -175,58 +203,57 @@
                 (closed)="panelOpenState = false"
               >
                 <mat-expansion-panel-header>
-                  <mat-panel-title></mat-panel-title>
-                  <mat-panel-description> </mat-panel-description>
-                </mat-expansion-panel-header>
-                <p>JavaScript</p>
-              </mat-expansion-panel>
-            </mat-accordion>
-          </div>
-          <div class="tech-item">
-            <mat-accordion>
-              <mat-expansion-panel hideToggle>
-                <mat-expansion-panel-header>
-                  <mat-panel-title> Frameworks </mat-panel-title>
-                  <mat-panel-description>
-                    This is a list of the frameworks i'm familiar with
-                  </mat-panel-description>
-                </mat-expansion-panel-header>
-              </mat-expansion-panel>
-              <mat-expansion-panel
-                (opened)="panelOpenState = true"
-                (closed)="panelOpenState = false"
-              >
-                <mat-expansion-panel-header>
-                  <mat-panel-title></mat-panel-title>
-                  <mat-panel-description> </mat-panel-description>
-                </mat-expansion-panel-header>
-                <p>JavaScript</p>
-              </mat-expansion-panel>
-            </mat-accordion>
-          </div>
-          <div class="tech-item">
-            <mat-accordion>
-              <mat-expansion-panel hideToggle>
-                <mat-expansion-panel-header>
-                  <mat-panel-title> Tools </mat-panel-title>
-                  <mat-panel-description>
-                    This is a list of the development tools i'm familiar with
-                  </mat-panel-description>
-                </mat-expansion-panel-header>
-              </mat-expansion-panel>
-              <mat-expansion-panel
-                (opened)="panelOpenState = true"
-                (closed)="panelOpenState = false"
-              >
-                <mat-expansion-panel-header>
-                  <mat-panel-title></mat-panel-title>
-                  <mat-panel-description> </mat-panel-description>
+                  <mat-panel-title>Click to view languages</mat-panel-title>
                 </mat-expansion-panel-header>
                 <ul>
-                  <li>JavaScript</li>
-                  <li>Typescript</li>
-                  <li>Php</li>
-                  <li>Java</li>
+                  <li *ngFor="let language of languages">{{ language }}</li>
+                </ul>
+              </mat-expansion-panel>
+            </mat-accordion>
+          </div>
+          <div class="tech-item">
+            <mat-accordion>
+              <mat-expansion-panel hideToggle>
+                <mat-expansion-panel-header>
+                  <mat-panel-title class="tech-title" [style]="'color:orange'">
+                    Frameworks
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+              </mat-expansion-panel>
+              <mat-expansion-panel
+                (opened)="panelOpenState = true"
+                (closed)="panelOpenState = false"
+              >
+                <mat-expansion-panel-header>
+                  <mat-panel-title> Click to view frameworks </mat-panel-title>
+                  <mat-panel-description> </mat-panel-description>
+                </mat-expansion-panel-header>
+                <ul *ngFor="let framework of frameworks">
+                  <li>{{ framework }}</li>
+                </ul>
+              </mat-expansion-panel>
+            </mat-accordion>
+          </div>
+          <div class="tech-item">
+            <mat-accordion>
+              <mat-expansion-panel hideToggle>
+                <mat-expansion-panel-header>
+                  <mat-panel-title class="tech-title" [style]="'color:crimson'">
+                    Tools
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+              </mat-expansion-panel>
+              <mat-expansion-panel
+                (opened)="panelOpenState = true"
+                (closed)="panelOpenState = false"
+              >
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    Click to view development tools
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+                <ul *ngFor="let tool of tools">
+                  <li>{{ tool }}</li>
                 </ul>
               </mat-expansion-panel>
             </mat-accordion>
@@ -272,7 +299,10 @@
       <div>
         <h1 class="section-title">Contact <span>info</span></h1>
       </div>
-      <div></div>
+      <div class="form">
+        <div class="upper-contact-details"></div>
+        <div></div>
+      </div>
     </div>
   </section>
   <!--End of Contact Section-->
