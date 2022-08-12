@@ -207,6 +207,7 @@
                 <mat-expansion-panel-header>
                   <mat-panel-title>Click to view languages</mat-panel-title>
                 </mat-expansion-panel-header>
+                <mat-divider></mat-divider>
                 <ul>
                   <li *ngFor="let language of languages">{{ language }}</li>
                 </ul>
@@ -228,8 +229,8 @@
               >
                 <mat-expansion-panel-header>
                   <mat-panel-title> Click to view frameworks </mat-panel-title>
-                  <mat-panel-description> </mat-panel-description>
                 </mat-expansion-panel-header>
+                <mat-divider></mat-divider>
                 <ul *ngFor="let framework of frameworks">
                   <li>{{ framework }}</li>
                 </ul>
@@ -254,6 +255,7 @@
                     Click to view development tools
                   </mat-panel-title>
                 </mat-expansion-panel-header>
+                <mat-divider></mat-divider>
                 <ul *ngFor="let tool of tools">
                   <li>{{ tool }}</li>
                 </ul>
@@ -303,12 +305,20 @@
       </div>
       <div class="social-icon">
         <div class="social-item">
-          <a href="#" title="github">
+          <a
+            href="https://github.com/Shelton-beep/"
+            target="_blank"
+            title="github"
+          >
             <img src="../assets/github-logo.png" alt="github" />
           </a>
         </div>
         <div class="social-item">
-          <a href="#" title="LinkedIn">
+          <a
+            href="https://www.linkedin.com/in/shelton-simbi-750155204/"
+            title="LinkedIn"
+            target="_blank"
+          >
             <img src="../assets/linkedin.png" alt="linkedin" />
           </a>
         </div>

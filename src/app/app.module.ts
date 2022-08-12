@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatIconModule } from '@angular/material/icon';
+import { MatDividerModule } from '@angular/material/divider';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatDialogModule } from '@angular/material/dialog'
 import { MatExpansionModule } from '@angular/material/expansion';
@@ -25,6 +26,7 @@ import { ContactComponent } from './contact/contact.component';
     MatGridListModule,
     MatIconModule,
     MatDialogModule,
+    MatDividerModule,
     ReactiveFormsModule,
     MatFormFieldModule,
     MatExpansionModule,
