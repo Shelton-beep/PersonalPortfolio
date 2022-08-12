@@ -1,28 +1,17 @@
 import { Component, HostListener, OnInit } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { MatDialog } from '@angular/material/dialog';
+import { ContactComponent } from './contact/contact.component';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
+
   title = 'PersonalPortfolio';
-
-  panelOpenState = false;
-
-  //method to change the color of the nav bar when scroll is at 100px
+  panelOpenState = true;
   header_variable = false;
-  @HostListener("document:scroll")
-  scrollFunction() {
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-      this.header_variable = true;
-    }
-    else {
-      this.header_variable = false;
-    }
-  }
-  /* End of method */
 
   languages: any = ['JavaScript', 'Typescript',
     'HTML | HTML5',
@@ -44,5 +33,27 @@ export class AppComponent {
     'Visual Studio Code'
   ];
 
+  constructor(private dialog: MatDialog) { }
 
+  ngOnInit(): void {
+  }
+
+  @HostListener("document:scroll")
+  //method to change the color of the nav bar when scroll is at 100px
+  scrollFunction() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      this.header_variable = true;
+    }
+    else {
+      this.header_variable = false;
+    }
+  }
+  /* End of method */
+
+  // method for opening contact form
+  openContactForm() {
+    const dialogRef = this.dialog.open(ContactComponent, {
+      width: '60%'
+    })
+  }
 }

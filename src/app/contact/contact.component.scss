@@ -1,0 +1,57 @@
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+u {
+  color: crimson;
+}
+.section-title {
+  font-size: 4rem;
+  font-weight: 300;
+  color: black;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  text-align: center;
+}
+.section-title span {
+  color: crimson;
+}
+/* Contact Info Section */
+#contact .contact {
+  flex-direction: column;
+}
+#contact .contactForm {
+  margin-top: 0;
+  padding-top: 10px;
+  width: 100%;
+}
+#contact .upper-contact {
+  flex-direction: row;
+  display: flex;
+}
+#contact .social-icon {
+  display: flex;
+  margin-bottom: 30px;
+}
+#contact .social-item {
+  height: 50px;
+  width: 50px;
+  margin: 0 5px;
+}
+#contact .social-item img {
+  filter: grayscale(1);
+  transition: 0.3s ease filter;
+}
+#contact .social-item:hover img {
+  filter: grayscale(0);
+  background-color: crimson;
+  border-radius: 25px;
+  transform: rotateX(45deg);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+/* End of Contact Info Section */

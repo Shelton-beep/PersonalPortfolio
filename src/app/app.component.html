@@ -1,7 +1,7 @@
 <html>
   <!--Header-->
   <section id="header">
-    <div class="header container" [class.header-change]="header_variable">
+    <div class="header container-fluid" [class.header-change]="header_variable">
       <div class="nav-bar">
         <div class="brand">
           <a href="#hero"
@@ -23,8 +23,8 @@
             <li>
               <a href="#about" data-after="About">About</a>
             </li>
-            <li>
-              <a href="#contact" data-after="Contact">Contact</a>
+            <li (click)="openContactForm()">
+              <a data-after="Contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -40,7 +40,9 @@
         <h1>Hello,<span></span></h1>
         <h1>my name is <span></span></h1>
         <h1>Shelton Nyasha Simbi <span></span></h1>
-        <a href="#contact" type="button" class="cta">Get in Touch</a>
+        <a (click)="openContactForm()" type="button" class="cta"
+          >Get in Touch</a
+        >
       </div>
     </div>
   </section>
@@ -293,39 +295,25 @@
   </section>
   <!--End of About Me Section-->
 
-  <!--Contact Section-->
-  <section id="contact">
-    <div class="contact container">
-      <div>
-        <h1 class="section-title">Contact <span>info</span></h1>
-      </div>
-      <div class="form">
-        <div class="upper-contact-details"></div>
-        <div></div>
-      </div>
-    </div>
-  </section>
-  <!--End of Contact Section-->
-
   <!--Footer-->
   <section id="footer">
     <div class="footer container">
       <div class="brand">
-        <h1><span>S</span>helton <span>S</span>imbi</h1>
-        <h2>Hard work pays</h2>
+        <h1><span>S</span>helton <span>N</span>yasha <span>S</span>imbi</h1>
       </div>
       <div class="social-icon">
         <div class="social-item">
-          <a href="#">github</a>
+          <a href="#" title="github">
+            <img src="../assets/github-logo.png" alt="github" />
+          </a>
         </div>
         <div class="social-item">
-          <a href="#">Twitter</a>
+          <a href="#" title="LinkedIn">
+            <img src="../assets/linkedin.png" alt="linkedin" />
+          </a>
         </div>
-        <div class="social-item">
-          <a href="#">LinkedIn</a>
-        </div>
-        <p>Copyrights @ 2022 Shelton. All rights reserved</p>
       </div>
+      <p>Shelton @ 2022. All rights reserved</p>
     </div>
   </section>
   <!--End of Footer-->
