@@ -9,6 +9,10 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class ContactComponent implements OnInit {
 
   contactForm!: FormGroup;
+  name!: string;
+  phoneNumber!: any;
+  email!: string;
+  message!: string;
 
   constructor(
     private formBuilder: FormBuilder) { }
@@ -17,9 +21,14 @@ export class ContactComponent implements OnInit {
     //grouping form input data together
     this.contactForm = this.formBuilder.group({
       name: [null, [Validators.required]],
+      phoneNumber: ['', Validators.required],
       email: ['', Validators.required],
-      message: ['', Validators.required],
+      message: ['', Validators.required]
     })
+  }
+
+  submitForm() {
+    const response = `My name is ${this.name}`
   }
 
 }

@@ -5,7 +5,10 @@
       <h1 class="section-title">
         <u>Contact <span>info</span></u>
       </h1>
+
+      <!-- Social Media Icons -->
       <div class="social-icon">
+        <!-- Icon for GitHub -->
         <div class="social-item">
           <a
             href="https://github.com/Shelton-beep/"
@@ -15,6 +18,8 @@
             <img src="../assets/github-logo.png" alt="github" />
           </a>
         </div>
+
+        <!-- Icon for LinkedIn -->
         <div class="social-item">
           <a
             href="https://www.linkedin.com/in/shelton-simbi-750155204/"
@@ -26,25 +31,50 @@
         </div>
       </div>
     </div>
+
+    <!-- Contact Form -->
     <div class="contactForm container">
-      <form>
+      <form
+        action="https://formsubmit.co/e7aaf12c-83e8-4807-9399-86d8d10e06b3"
+        (ngSubmit)="submitForm()"
+        method="post"
+      >
         <div class="upper-contact" style="justify-content: space-between">
           <!-- Input Field for Name -->
           <div class="form-group">
             <label>Name</label>
-            <input type="text" class="form-control" />
+            <input
+              type="text"
+              name="name"
+              class="form-control"
+              [(ngModel)]="name"
+              required
+            />
+            <small>Name</small>
           </div>
 
           <!-- Input Field for Phone Number -->
           <div class="form-group">
             <label>Phone Number</label>
-            <input type="text" class="form-control" />
+            <input
+              type="text"
+              name="phoneNumber"
+              class="form-control"
+              [(ngModel)]="phoneNumber"
+              required
+            />
           </div>
 
           <!-- Input Field for Email -->
           <div class="form-group">
             <label>Email</label>
-            <input type="text" class="form-control" />
+            <input
+              type="email"
+              name="email"
+              class="form-control"
+              [(ngModel)]="email"
+              required
+            />
           </div>
         </div>
 
@@ -57,6 +87,8 @@
             cols="30"
             rows="10"
             class="form-control"
+            [(ngModel)]="message"
+            required
           ></textarea>
         </div>
 
@@ -71,4 +103,5 @@
     </div>
   </div>
 </section>
+
 <!--End of Contact Section-->
