@@ -10,6 +10,12 @@
   font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
 }
+.change-color {
+  background-color: crimson;
+  border-radius: 8px;
+  margin-left: 5px;
+  transition: background-color 0.5s ease-out;
+}
 a {
   text-decoration: none;
 }
@@ -151,6 +157,9 @@ p {
 }
 #header .nav-list ul li:hover a {
   color: crimson;
+  background-color: transparent;
+  border-radius: 8px;
+  transition: all 0.5s ease 0s;
 }
 #header .hamburger {
   z-index: 100;
@@ -362,6 +371,7 @@ p {
   margin: 20px auto;
   overflow: hidden;
   border-radius: 10px;
+  cursor: pointer;
 }
 #projects .project-info {
   padding: 30px;
@@ -382,6 +392,19 @@ p {
   font-size: 1.8rem;
   font-weight: 300;
   margin-top: 10px;
+}
+#projects .project-info mat-icon {
+  font-size: 30px;
+  color: crimson;
+  margin-right: 5px;
+  width: auto;
+  transform: scale(1);
+  &:hover {
+    transform: scale(1.5);
+    color: green;
+    transition: 0.2s ease-out;
+    margin-right: 8px;
+  }
 }
 #projects .project-info p {
   color: white;

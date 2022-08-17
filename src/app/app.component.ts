@@ -33,9 +33,16 @@ export class AppComponent implements OnInit {
     'Visual Studio Code'
   ];
 
+  homeIsClicked: boolean = false;
+  projectsIsClicked: boolean = false;
+  skillsIsClicked: boolean = false;
+  aboutIsClicked: boolean = false;
+  contactIsClicked: boolean = false;
+
   constructor(private dialog: MatDialog) { }
 
   ngOnInit(): void {
+
   }
 
   @HostListener("document:scroll")
@@ -52,8 +59,45 @@ export class AppComponent implements OnInit {
 
   // method for opening contact form
   openContactForm() {
+    this.projectsIsClicked = false;
+    this.aboutIsClicked = false;
+    this.homeIsClicked = false;
+    this.skillsIsClicked = false;
+    this.contactIsClicked = true;
     const dialogRef = this.dialog.open(ContactComponent, {
       width: '60%'
     })
+  }
+
+  homeClicked() {
+    this.projectsIsClicked = false;
+    this.skillsIsClicked = false;
+    this.aboutIsClicked = false;
+    this.contactIsClicked = false;
+    this.homeIsClicked = true;
+  }
+
+  projectsClicked() {
+    this.skillsIsClicked = false;
+    this.aboutIsClicked = false;
+    this.contactIsClicked = false;
+    this.homeIsClicked = false;
+    this.projectsIsClicked = true;
+  }
+
+  skillsClicked() {
+    this.projectsIsClicked = false;
+    this.aboutIsClicked = false;
+    this.contactIsClicked = false;
+    this.homeIsClicked = false;
+    this.skillsIsClicked = true;
+  }
+
+  aboutClicked() {
+    this.projectsIsClicked = false;
+    this.contactIsClicked = false;
+    this.homeIsClicked = false;
+    this.skillsIsClicked = false;
+    this.aboutIsClicked = true;
   }
 }
