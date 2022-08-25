@@ -1,0 +1,156 @@
+<!--Experience and Skills Section-->
+<section id="skills">
+  <div class="skills container">
+    <div class="skills-header">
+      <h1 class="section-title">
+        Exper<span>ience</span> a<span>n</span>d <span>Ski</span>lls
+      </h1>
+    </div>
+    <div class="all-experiences">
+      <div class="experience-item">
+        <div class="icon-display">
+          <div class="icon">
+            <mat-icon>work</mat-icon>
+          </div>
+          <div class="vl"></div>
+        </div>
+        <div class="experience-info">
+          <h5 class="experience-date">March to present</h5>
+          <h2 class="experience-title">
+            <b>Front End Software Developer-</b>Judicial Service Commission
+          </h2>
+          <p class="experience-duties">Main responsibilities:</p>
+          <ul>
+            <li>Responsive Web Design</li>
+            <li>
+              Producing, maintaining and modifying websites and user interfaces
+            </li>
+            <li>
+              Routinely testing websites for ease of use, speed and other
+              quality factors
+            </li>
+            <li>Fixing any website issues or bugs that arise</li>
+          </ul>
+        </div>
+      </div>
+      <div class="experience-item">
+        <div class="icon-display">
+          <div class="icon">
+            <mat-icon>work_outline</mat-icon>
+          </div>
+          <div class="vl"></div>
+        </div>
+        <div class="experience-info">
+          <h5 class="experience-date">August 2019 to December 2020</h5>
+          <h2 class="experience-title">
+            <b>IT Support and Software Developer Intern-</b>Judicial Service
+            Commission
+          </h2>
+          <p class="experience-duties">Main responsibilities:</p>
+          <ul>
+            <li>Maintaining and improving company website</li>
+            <li>designing, development and deployment of company systems</li>
+            <li>designing and developing RESTful APIs</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="experience-item">
+        <div class="icon-display">
+          <div class="icon">
+            <mat-icon>school</mat-icon>
+          </div>
+          <div class="vl"></div>
+        </div>
+        <div class="experience-info">
+          <h5 class="experience-date" style="width: 200px">
+            August 2017 - JUNE 2021
+          </h5>
+          <h2 class="experience-title">
+            <b>Bachelor's degree: Business Studies and Computing Science -</b>
+            <p>UNIVERSITY OF ZIMBABWE</p>
+          </h2>
+        </div>
+      </div>
+    </div>
+    <div class="technologies">
+      <h1>
+        <u>Here are the technologies I've been working with recently:</u>
+      </h1>
+      <div class="all-tech">
+        <div class="tech-item">
+          <mat-accordion>
+            <mat-expansion-panel hideToggle>
+              <mat-expansion-panel-header>
+                <mat-panel-title class="tech-title" [style]="'color:green'">
+                  Languages
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+            </mat-expansion-panel>
+            <mat-expansion-panel
+              (opened)="panelOpenState = true"
+              (closed)="panelOpenState = false"
+            >
+              <mat-expansion-panel-header>
+                <mat-panel-title>Click to view languages</mat-panel-title>
+              </mat-expansion-panel-header>
+              <mat-divider></mat-divider>
+              <ul>
+                <li *ngFor="let language of languages">{{ language }}</li>
+              </ul>
+            </mat-expansion-panel>
+          </mat-accordion>
+        </div>
+        <div class="tech-item">
+          <mat-accordion>
+            <mat-expansion-panel hideToggle>
+              <mat-expansion-panel-header>
+                <mat-panel-title class="tech-title" [style]="'color:orange'">
+                  Frameworks
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+            </mat-expansion-panel>
+            <mat-expansion-panel
+              (opened)="panelOpenState = true"
+              (closed)="panelOpenState = false"
+            >
+              <mat-expansion-panel-header>
+                <mat-panel-title> Click to view frameworks </mat-panel-title>
+              </mat-expansion-panel-header>
+              <mat-divider></mat-divider>
+              <ul *ngFor="let framework of frameworks">
+                <li>{{ framework }}</li>
+              </ul>
+            </mat-expansion-panel>
+          </mat-accordion>
+        </div>
+        <div class="tech-item">
+          <mat-accordion>
+            <mat-expansion-panel hideToggle>
+              <mat-expansion-panel-header>
+                <mat-panel-title class="tech-title" [style]="'color:crimson'">
+                  Tools
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+            </mat-expansion-panel>
+            <mat-expansion-panel
+              (opened)="panelOpenState = true"
+              (closed)="panelOpenState = false"
+            >
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  Click to view development tools
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <mat-divider></mat-divider>
+              <ul *ngFor="let tool of tools">
+                <li>{{ tool }}</li>
+              </ul>
+            </mat-expansion-panel>
+          </mat-accordion>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--End of Experience and Skills Section-->
