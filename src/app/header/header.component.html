@@ -1,0 +1,61 @@
+<!--Header-->
+<section id="header">
+  <div class="header container-fluid" [class.header-change]="header_variable">
+    <div class="nav-bar">
+      <div class="brand">
+        <a href="#hero"
+          ><h1><span>SNS</span></h1>
+        </a>
+      </div>
+      <div class="nav-list">
+        <div class="hamburger"><div class="bar"></div></div>
+        <ul>
+          <li>
+            <a
+              href="#hero"
+              [ngClass]="{ 'change-color': homeIsClicked }"
+              data-after="Home"
+              (click)="homeClicked()"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#projects"
+              [ngClass]="{ 'change-color': projectsIsClicked }"
+              (click)="projectsClicked()"
+              data-after="Projects"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a
+              href="#skills"
+              data-after="Skills"
+              [ngClass]="{ 'change-color': skillsIsClicked }"
+              (click)="skillsClicked()"
+              >Experience and Skills</a
+            >
+          </li>
+          <li>
+            <a
+              href="#about"
+              data-after="About"
+              [ngClass]="{ 'change-color': aboutIsClicked }"
+              (click)="aboutClicked()"
+              >About</a
+            >
+          </li>
+          <li
+            (click)="openContactForm()"
+            [ngClass]="{ 'change-color': contactIsClicked }"
+          >
+            <a data-after="Contact">Contact</a>
+          </li>
+        </ul>
+        <div class="animation start-home"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--End of Header-->
