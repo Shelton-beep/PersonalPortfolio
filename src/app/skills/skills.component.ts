@@ -13,21 +13,24 @@ export class SkillsComponent implements OnInit {
     'HTML | HTML5',
     'CSS',
     'ES6+',
-    'NodeJS',
     'Php',
+    'MongoDB',
+    'SQL',
     'Java'];
 
   frameworks: any = [
     'Angular',
     'ReactJS',
     'React Native',
-    'Android'
+    'Android',
+    'Express'
   ];
 
   tools: any = [
     'Git',
     'Intelij IDEA',
-    'Visual Studio Code'
+    'Visual Studio Code',
+    'NodeJS'
   ];
 
   constructor() { }

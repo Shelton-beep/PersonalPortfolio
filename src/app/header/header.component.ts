@@ -17,6 +17,7 @@ export class HeaderComponent implements OnInit {
   contactIsClicked: boolean = false;
 
   header_variable = false;
+  menuVariable: boolean = false;
 
   constructor(private dialog: MatDialog, private router: Router) { }
 
@@ -26,6 +27,12 @@ export class HeaderComponent implements OnInit {
     this.homeClicked();
     //document.body.scrollTo('hero');
   }
+
+  //toggling the menu icon button to open or close 
+  openMenu() {
+    this.menuVariable = !this.menuVariable;
+  }
+
   // method for opening contact form
   openContactForm() {
     this.projectsIsClicked = false;
