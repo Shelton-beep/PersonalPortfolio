@@ -49,13 +49,14 @@ p {
 }
 
 .section-title {
-  font-size: 4rem;
+  font-size: clamp(1rem, 2.5vw, 4rem);
   font-weight: 300;
   color: black;
   margin-bottom: 10px;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   text-align: center;
+  padding: auto;
 }
 .section-title span {
   color: crimson;
@@ -80,7 +81,7 @@ p {
   background-color: crimson;
 }
 .brand h1 {
-  font-size: 3rem;
+  font-size: clamp(1rem, 2.5vw, 3rem);
   text-transform: uppercase;
   color: white;
 }

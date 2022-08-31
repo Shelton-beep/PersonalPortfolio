@@ -1,7 +1,7 @@
 /* Experience and Skills Section */
 #skills .skills-header h1 {
   margin-bottom: 50px;
-  font-size: 3rem;
+  font-size: clamp(2rem, 2.5vw, 3rem);
 }
 #skills .skills {
   flex-direction: column;

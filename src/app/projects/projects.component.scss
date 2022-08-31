@@ -45,22 +45,6 @@
   font-weight: 300;
   margin-top: 10px;
 }
-#projects .project-info mat-icon {
-  font-size: 30px;
-  color: crimson;
-  margin-right: 5px;
-  width: auto;
-  transform: scale(1);
-  animation: hamburger_pulse 1s ease infinite;
-
-  &:hover {
-    transform: scale(1.5);
-    color: green;
-    transition: 0.2s ease-out;
-    margin-right: 8px;
-    animation: hamburger_pulse 0s ease infinite;
-  }
-}
 #projects .project-info p {
   color: white;
 }
@@ -69,6 +53,25 @@
   height: 300px;
   overflow: hidden;
   position: relative;
+}
+#projects .project_buttons .project_links {
+  display: inline-block;
+  padding: 10px 30px;
+  color: white;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 25px;
+  font-size: clamp(1em, 2.5vw, 2em);
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-top: 30px;
+  transition: 0.3s ease;
+  transition-property: background-color, border, color;
+}
+#projects .project_buttons .project_links:hover {
+  color: crimson;
+  border: 2px solid crimson;
+  background-color: transparent;
 }
 #projects .project-img::after {
   content: "";
@@ -108,6 +111,13 @@
   }
   #projects .all-projects .project-img {
     height: 100%;
+  }
+  #projects .project_buttons {
+    display: flex;
+  }
+  #projects .project_buttons a {
+    justify-content: space-between;
+    padding: 5px;
   }
   /*End of Projects*/
 }

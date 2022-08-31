@@ -26,7 +26,7 @@
 #hero h1 {
   display: block;
   width: fit-content;
-  font-size: 3rem;
+  font-size: clamp(2rem, 2.5vw, 3rem);
   position: relative;
   color: transparent;
   animation: text_reveal 0.5s ease forwards;
