@@ -1,0 +1,83 @@
+/* Temporary Contact Section*/
+#temporary-contact .contact {
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+#temporary-contact .contact-items {
+  width: 400px;
+}
+#temporary-contact .contact-item {
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0px 0px 5px 0 #0000002c;
+  cursor: default;
+}
+#temporary-contact .contact-item:hover {
+  box-shadow: 0px 0px 18px 0 #0000002c;
+  transition: 0.3s ease box-shadow;
+  color: crimson;
+}
+#temporary-contact .icon {
+  width: 70px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  color: crimson;
+}
+#temporary-contact .icon:hover {
+  color: black;
+}
+#temporary-contact .contact-info h1 {
+  font-size: clamp(1rem, 2.5vw, 2.5rem);
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+#temporary-contact .contact-info h2 {
+  font-size: clamp(0.5rem, 2.5vw, 1.3rem);
+  line-height: 2rem;
+  font-weight: 500;
+}
+
+/* Temporary Contact Section*/
+@media only screen and (min-width: 768px) {
+  #temporary-contact .contact {
+    flex-direction: column;
+    padding: 100px 0;
+    align-items: center;
+    justify-content: center;
+    min-width: 20vh;
+  }
+  #temporary-contact .contact-items {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 30px 5px 30px 5px;
+    margin: 0;
+  }
+  #temporary-contact .contact-item {
+    width: 30%;
+    margin: 0;
+    flex-direction: row;
+  }
+  #temporary-contact .contact-item .icon {
+    height: 100px;
+    width: 100px;
+  }
+  #temporary-contact .contact-item .contact-info {
+    width: 100%;
+    text-align: left;
+    padding-left: 20px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+}

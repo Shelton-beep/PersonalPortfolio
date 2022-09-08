@@ -77,6 +77,13 @@ export class HeaderComponent implements OnInit {
     this.skillsIsClicked = false;
     this.aboutIsClicked = true;
   }
+  contactClicked() {
+    this.projectsIsClicked = false;
+    this.contactIsClicked = true;
+    this.homeIsClicked = false;
+    this.skillsIsClicked = false;
+    this.aboutIsClicked = false;
+  }
 
   @HostListener("document:scroll")
   //method to change the color of the nav bar when scroll is at 100px

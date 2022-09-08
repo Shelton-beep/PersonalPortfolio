@@ -48,11 +48,14 @@
               >About</a
             >
           </li>
-          <li
-            (click)="openContactForm()"
-            [ngClass]="{ 'change-color': contactIsClicked }"
-          >
-            <a data-after="Contact">Contact</a>
+          <li>
+            <a
+              href="#temporary-contact"
+              (click)="contactClicked()"
+              [ngClass]="{ 'change-color': contactIsClicked }"
+              data-after="Contact"
+              >Contact</a
+            >
           </li>
         </ul>
         <div class="animation start-home"></div>

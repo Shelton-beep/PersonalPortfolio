@@ -19,6 +19,7 @@ import { HomeComponent } from './home/home.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { SkillsComponent } from './skills/skills.component';
 import { AboutComponent } from './about/about.component';
+import { TemporaryContactComponent } from './temporary-contact/temporary-contact.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { AboutComponent } from './about/about.component';
     HomeComponent,
     ProjectsComponent,
     SkillsComponent,
-    AboutComponent
+    AboutComponent,
+    TemporaryContactComponent
   ],
   imports: [
     BrowserModule,
